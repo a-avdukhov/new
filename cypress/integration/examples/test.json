@@ -1,0 +1,51 @@
+{
+    "configuration": {
+        "device": {
+            "orientation": "landscape",
+            "deviceName": "Desktop"
+        }
+    },
+    "type": "clickpath",
+    "version": "1.0",
+    "events": [{
+            "description": "Loading of \"https://www.mtbank.by/\"",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {},
+            "type": "navigate",
+            "url": "https://www.mtbank.by/"
+        },
+        {
+            "description": "type кредиты",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [{
+                    "type": "css",
+                    "value": "[name=\"q\"]"
+                }]
+            },
+            "type": "keystrokes",
+            "textValue": "кредиты",
+            "simulateBlurEvent": true,
+            "masked": false,
+            "simulateReturnKey": true
+        },
+        {
+            "description": "click",
+            "wait": {
+                "waitFor": "page_complete"
+            },
+            "target": {
+                "locators": [{
+                    "type": "dom",
+                    "value": "document.evaluate('//div[@id=\\'comp_44582a5de7111d7901b69872dbe12dd9\\']/section[3]/div/div/div/div[2]/a/span/b/b', document, null, XPathResult.ANY_TYPE, null).iterateNext()"
+                }]
+            },
+            "type": "click",
+            "button": 0
+        }
+    ]
+}

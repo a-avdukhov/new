@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCase>
+<selenese>
+	<command>comment</command>
+	<target><![CDATA[]]></target>
+	<value><![CDATA[Label: Test]]></value>
+</selenese>
+<selenese>
+	<command>resizeWindow</command>
+	<target><![CDATA[]]></target>
+	<value><![CDATA[1920,937]]></value>
+</selenese>
+<selenese>
+	<command>open</command>
+	<target><![CDATA[https://www.mtbank.by/]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>click</command>
+	<target><![CDATA[link=Вклады]]></target>
+	<value><![CDATA[45,44]]></value>
+</selenese>
+<selenese>
+	<command>click</command>
+	<target><![CDATA[css=a.banner__link]]></target>
+	<value><![CDATA[574,62]]></value>
+</selenese>
+<selenese>
+	<command>click</command>
+	<target><![CDATA[link=Оформить в отделении]]></target>
+	<value><![CDATA[97,24]]></value>
+</selenese>
+</TestCase>
